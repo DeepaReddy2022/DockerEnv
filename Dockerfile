@@ -1,6 +1,5 @@
 ## Start with the official image (lightweight Debian) Rocker Image
-ARG DOCKER_IMAGE
-FROM $DOCKER_IMAGE
+FROM odysseusinc/r-java:test
 
 ## gnupg is needed to add new key
 RUN apt-get update && apt-get install -y gnupg2 software-properties-common libgdal-dev libproj-dev libbz2-dev
